@@ -1,0 +1,53 @@
+.contacts {
+    display: block;
+    padding-left: 0;
+    margin-top: 20px;
+    margin-bottom: 0;
+    letter-spacing: 0.03em;
+
+    &__list + &__list {
+        margin-top: 9px;
+    }
+
+    &__link {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+    
+        color: var(--primary-wight-color);
+    
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    }
+
+    &__gmail,
+    &__tel {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+
+        color: rgba(255, 255, 255, 0.6);
+
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    }
+}

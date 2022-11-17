@@ -1,0 +1,31 @@
+
+.footer {
+    background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__container {
+        display: flex;
+    }
+
+    &__logo {
+        color: var(--primary-wight-color);
+    }
+}
+
+.footer-subscribe {
+    margin-left: auto;
+}
+
+.footer-title {
+    margin-top: 11px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}

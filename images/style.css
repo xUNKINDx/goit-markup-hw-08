@@ -1,0 +1,56 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.gmail {
+  width: 1.3330078125em;
+}
+
+.group-5 {
+  width: 1.3408203125em;
+}
+
+.group-2 {
+  width: 0.76953125em;
+}
+
+.group-3 {
+  width: 1.0712890625em;
+}
+
+.group-4 {
+  width: 2.0234375em;
+}
+
+.group-6 {
+  width: 2.0888671875em;
+}
+
+.group-1 {
+  width: 0.8720703125em;
+}
+
+.computer {
+  width: 1.2958984375em;
+}
+
+.Vector {
+  width: 0.625em;
+}
+
+.watch {
+  width: 0.9716796875em;
+}

@@ -1,0 +1,40 @@
+.section-clients__title {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+
+.clients {
+    display: flex;
+
+    &__item + &__item {
+        margin-left: 30px;
+    }
+
+    &__link {
+        display: inline-flex;
+        padding: 16px 32px;
+        width: 170px;
+        height: 92px;
+        color: #AFB1B8;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        align-items: center;
+        justify-content: center;
+    
+        transition-property: color, border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            border-color: #2196F3;
+            color: #2196F3;
+        }
+    }
+}

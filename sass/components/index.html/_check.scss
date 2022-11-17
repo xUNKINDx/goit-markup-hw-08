@@ -1,0 +1,45 @@
+.check {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+    margin-bottom: 30px;
+
+    letter-spacing: 0.03em;
+
+    color: #757575;
+
+    &__input {
+        position: relative;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+
+        &:checked + .check__box {
+            background-image: url(../images/icon-check.svg);
+        }
+        
+        &:focus + .check__box {
+            outline: 2px solid;
+        }
+    }
+
+    &__box {
+        position: absolute;
+        top: 1px;
+        width: 16px;
+        height: 15px;
+        background-image: url(../images/Vector.svg);
+        margin-left: -23px;
+        border-radius: 2px;
+    }
+
+    &__policy {
+        text-decoration-skip-ink: none;
+        text-decoration: underline;
+    }
+}
