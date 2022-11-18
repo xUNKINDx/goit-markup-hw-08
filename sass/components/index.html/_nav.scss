@@ -54,11 +54,14 @@
 
 
 .auth-nav {
+    
+
     @media screen and (max-width: 1199px) {
         display: block;
-        &_item {
-            margin: 0;
-        } 
+    }
+
+    @media screen and (max-width: 767px) {
+        display: none;
     }
 
     display: flex;

@@ -1,7 +1,10 @@
 .social {
+    @media screen and (min-width: 320px) {
+        padding-bottom: 24px;
+    }
     display: flex;
     justify-content: center;
-    
+
     &__item + &__item {
         margin-left: 10px;
     }

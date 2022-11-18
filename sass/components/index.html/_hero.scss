@@ -16,6 +16,11 @@
     background-size: cover;
     margin: 0 auto;
 
+    @media screen and (max-width: 767px) {
+        padding-top: 118px;
+        padding-bottom: 118px;
+    }
+
     &__title {
         max-width: 696px;
         margin-right: auto;
@@ -30,5 +35,10 @@
         text-transform: uppercase;
     
         color: var(--primary-wight-color);
+
+        @media screen and (max-width: 767px) {
+            font-size: 26px;
+            line-height: 1.62;
+        }
     }
 }

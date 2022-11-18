@@ -11,15 +11,34 @@
 
 .clients {
     display: flex;
+    @media screen and (max-width: 1199px) {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    &__item {
+        @media screen and (max-width: 767px) {
+            width: 210px;
+        }
+    }
 
     &__item + &__item {
-        margin-left: 30px;
+        @media screen and (min-wight: 1200px) {
+            margin-left: 30px;
+        }
     }
 
     &__link {
+        @media screen and (max-width: 1199px) {
+            width: 100%;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 170px;
+        }
         display: inline-flex;
         padding: 16px 32px;
-        width: 170px;
         height: 92px;
         color: #AFB1B8;
         border: 1px solid #AFB1B8;
@@ -38,3 +57,5 @@
         }
     }
 }
+
+
