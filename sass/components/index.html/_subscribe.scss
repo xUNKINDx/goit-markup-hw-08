@@ -1,8 +1,14 @@
 .subscribe {
-    display: flex;
-    align-items: center;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+    }
+    
 
     &__input {
+        @media screen and (min-width: 320px) {
+            width: 100%;
+        }
         position: relative;
         padding: 11px 15px 11px 32px;
         font:inherit;
@@ -21,7 +27,9 @@
     }
 
     &__button {
-        margin-left: 12px;
+        @media screen and (min-width: 1200px) {
+            margin-left: 12px;
+        }
     }
 
     &__svg {

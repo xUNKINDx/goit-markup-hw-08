@@ -101,6 +101,9 @@ a:link {
   border-bottom: 1px solid #ECECEC;
   font-weight: 500;
 }
+.header__logo {
+  padding: 16px 0px;
+}
 
 .header__main {
   display: flex;
@@ -201,6 +204,8 @@ a:link {
 }
 
 .logo {
+  display: flex;
+  justify-content: center;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -392,6 +397,11 @@ a:link {
     margin-left: 30px;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .user__list + .user__list {
+    margin-top: 30px;
+  }
+}
 @media screen and (max-width: 767px) {
   .user__jpg {
     width: 450px;
@@ -518,15 +528,24 @@ a:link {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer__container {
-  display: flex;
+@media screen and (min-width: 320px) {
+  .footer {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+  }
 }
 .footer__logo {
   color: var(--primary-wight-color);
 }
 
-.footer-subscribe {
-  margin-left: auto;
+@media screen and (min-width: 1200px) {
+  .footer-subscribe {
+    margin-left: auto;
+  }
 }
 
 .footer-title {
@@ -540,6 +559,11 @@ a:link {
   text-transform: uppercase;
   color: #FFFFFF;
 }
+@media screen and (min-width: 320px) {
+  .footer-title {
+    text-align: center;
+  }
+}
 
 .contacts {
   display: block;
@@ -547,6 +571,13 @@ a:link {
   margin-top: 20px;
   margin-bottom: 0;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 320px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .contacts__list + .contacts__list {
   margin-top: 9px;
@@ -581,10 +612,12 @@ a:link {
   color: var(--accent-color);
 }
 
-.connect-block {
-  width: 206px;
-  height: 80px;
-  margin-left: 70px;
+@media screen and (min-width: 1200px) {
+  .connect-block {
+    width: 206px;
+    height: 80px;
+    margin-left: 70px;
+  }
 }
 
 .connect {
@@ -592,9 +625,11 @@ a:link {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.subscribe {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    display: flex;
+    align-items: center;
+  }
 }
 .subscribe__input {
   position: relative;
@@ -609,11 +644,18 @@ a:link {
   height: 50px;
   background: none;
 }
+@media screen and (min-width: 320px) {
+  .subscribe__input {
+    width: 100%;
+  }
+}
 .subscribe__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-.subscribe__button {
-  margin-left: 12px;
+@media screen and (min-width: 1200px) {
+  .subscribe__button {
+    margin-left: 12px;
+  }
 }
 .subscribe__svg {
   margin-left: 10px;

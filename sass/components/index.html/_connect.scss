@@ -1,7 +1,10 @@
 .connect-block {
-    width: 206px;
-    height: 80px;
-    margin-left: 70px;
+    @media screen and (min-width:1200px) {
+        width: 206px;
+        height: 80px;
+        margin-left: 70px;
+    }
+    
 }
 
 .connect {

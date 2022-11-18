@@ -2,6 +2,10 @@
     background: var(--primary-wight-color);
     border-bottom: 1px solid #ECECEC;
     font-weight: 500;
+
+    &__logo {
+        padding: 16px 0px;
+    }
 }
 
 .header__main {
