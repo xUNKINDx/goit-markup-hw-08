@@ -116,17 +116,17 @@ a:link {
 }
 
 .menu-toggle {
-  height: 40px;
-  width: 40px;
+  min-height: 40px;
+  min-width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
-  margin-top: 4px;
+  margin: 0;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
   border: none;
+  border-radius: 50%;
   outline: none;
 }
 .menu-toggle__svg-close {
@@ -142,6 +142,11 @@ a:link {
   .menu-toggle {
     display: none;
   }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .js-close-menu {
@@ -322,16 +327,18 @@ a:link {
   align-items: center;
 }
 .benefits__item {
-  width: 100%;
+  max-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .benefits__item {
     flex-basis: calc((100% - 30px) / 2);
+    max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .benefits__item {
     flex-basis: calc((100% - 90px) / 4);
+    max-width: 270px;
   }
 }
 .benefits__title {
@@ -567,14 +574,17 @@ a:link {
     justify-content: center;
   }
 }
-@media screen and (max-width: 767px) {
+.clients__item {
+  width: 210px;
+}
+@media screen and (min-width: 768px) {
   .clients__item {
-    width: 210px;
+    width: 226px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .clients__item + .clients__item {
-    margin-left: 30px;
+  .clients__item {
+    width: 170px;
   }
 }
 .clients__link {
@@ -958,6 +968,8 @@ a:link {
   gap: 32px;
   justify-content: space-between;
   transform: translateX(0);
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
 }
 @media screen and (min-width: 768px) {
   .menu-container {
@@ -970,6 +982,35 @@ a:link {
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: #212121;
+}
+.menu-container__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
 }
 
 .mobile-contacts {

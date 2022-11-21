@@ -1,16 +1,16 @@
 .menu-toggle {
-    height: 40px;
-    width: 40px;
+    min-height: 40px;
+    min-width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: auto;
-    margin-top: 4px;
+  
+    margin: 0;
     padding: 0;
     background-color: transparent;
     cursor: pointer;
     border: none;
-    
+    border-radius: 50%;
     outline: none;
 
     &__svg-close {
@@ -30,6 +30,11 @@
     }
 
     
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .js-close-menu {
