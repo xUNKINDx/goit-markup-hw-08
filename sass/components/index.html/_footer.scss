@@ -16,11 +16,16 @@
 
         @media screen and (min-width: 1200px) {
             display: flex;
+            gap: 0;
+            margin-top: 11px;
         }
     }
 
     &__logo {
         color: var(--primary-wight-color);
+        @media screen and (min-width:1200px) {
+            justify-content: left;
+        }
     }
 }
 
@@ -76,5 +81,6 @@
 
     @media screen and (min-width: 1200px) {
         margin-top: 0;
+        text-align: left;
     }
 }
