@@ -5,6 +5,8 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+    justify-content: space-between;
+    transform: translateX(0);
     &__link {
         
         font-weight: 500;
