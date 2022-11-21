@@ -69,8 +69,15 @@
     margin-left: auto;
     padding-left: 0;
 
+    @media screen and (min-width:1200px) {
+        &__item + &__item {
+            margin-left: 50px;
+        }
+    }
+    
     
     &__item {
+        
         margin-top: 0;
         margin-bottom: 0;
     }
