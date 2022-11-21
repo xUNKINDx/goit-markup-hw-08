@@ -701,6 +701,11 @@ a:link {
     margin-top: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-title {
+    margin-top: 0;
+  }
+}
 
 .contacts {
   display: block;
