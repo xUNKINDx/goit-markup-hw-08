@@ -2,6 +2,9 @@
     @media screen and (min-width:768px) {
         display: none;
     }
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
     &__link {
         
         font-weight: 500;
@@ -14,14 +17,25 @@
 }
 
 .mobile-contacts {
-    &__link {
-        font-family: 'Roboto';
-        font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    text-decoration: none;
+    margin-top: auto;
+
+    &__tel {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.18;
+        letter-spacing: .02em;
+        color: #2196f3;
+    }
+    &__mail {
         font-weight: 500;
         font-size: 24px;
-        line-height: 28px;
-        letter-spacing: 0.02em;
-
+        line-height: 1.17;
+        letter-spacing: .02em;
         color: #757575;
     }
 }
@@ -31,17 +45,18 @@
 }
 
 .mobile-social {
-    &__link {
-        gap: 20px;
-        display: flex;
-        font-family: 'Roboto';
-        font-style: normal;
+    display: flex;
+        flex-wrap: wrap;
+        margin-top: 64px;
         font-weight: 500;
         font-size: 18px;
-        line-height: 1.22px;
-        border-right: #212121;
-        letter-spacing: 0.02em;
-
-        color: #2196F3;
+        line-height: 22px;
+        letter-spacing: .02em;
+        list-style: none;
+        gap: 10px;
+        color: #2196f3;
+    &__link {
+        padding-right: 10px;
+        border-right: 1px solid rgba(33,33,33,.2);
     }
 }
