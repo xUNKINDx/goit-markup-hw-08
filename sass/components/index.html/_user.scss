@@ -7,10 +7,12 @@
     &__list {
         @media screen and (max-width: 767px) {
             width: 450px;
+            margin-left: auto;
+            margin-right: auto;
         }
-        
         width: 270px;
         text-align: center;
+        padding-bottom: 20px;
     
         background: #FFFFFF;
         /* material shadow v1 */
@@ -50,6 +52,7 @@
 
     &__workname {
         padding-top: 10px;
+        padding-bottom: 16px;
         margin-top: 0;
         margin-bottom: 0;
     

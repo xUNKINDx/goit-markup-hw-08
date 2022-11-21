@@ -1,0 +1,31 @@
+.menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-top: 4px;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    
+    outline: none;
+
+    &__svg-close {
+        display: none;
+    }
+
+    &.is-open &__svg-close {
+        display: block;
+    }
+
+    &.is-open &__svg-menu {
+        display: none;
+    }
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}

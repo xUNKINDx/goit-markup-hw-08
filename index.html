@@ -39,6 +39,12 @@
                     +38 096 111 11 11</a>
                 </li>
             </ul>
+            <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="24px" height="16px">
+                    <use class="menu-toggle__svg-menu" href="./images/SVG/menu_24px.svg#menu"></use>
+                    <use class="menu-toggle__svg-close" href="./images/SVG/close_24px.svg#close"></use>
+                </svg>
+            </button>
         </div>
     </header>
     <main>
@@ -397,7 +403,7 @@
                         Погоджуюся з розсилкою та приймаю <a href="" class="check__policy">Умови договору</a>
                     </label>
                 </div>
-                <button type="submit" class="send btn send__modal">Відправити</button>
+                <button type="submit" class="btn send__modal">Відправити</button>
             </form>
             <button class="button modal__button" data-modal-close>
                 <svg width="18" height="18">
@@ -406,6 +412,50 @@
             </button>
         </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <div class="mobile-menu">
+            <ul class="mobile-menu__nav">
+                <li><a href="" class="mobile-menu__link">Студія</a></li>
+                <li><a href="" class="mobile-menu__link">Портфоліо</a></li>
+                <li><a href="" class="mobile-menu__link">Контакти</a></li>
+            </ul>
+            <div class="mobile-menu__bottom">
+                <ul class="mobile-contacts">
+                    <li class="mobile-contacts__link"><a href="">+38 096 111 11 11</a></li>
+                    <li class="mobile-contacts__link"><a href="">info@devstudio.com</a></li>
+                </ul>
+                <ul class="mobile-social">
+                    <li class="mobile-social__link"><a href="">Instagram</a></li>
+                    <li class="mobile-social__link"><a href="">Twitter</a></li>
+                    <li class="mobile-social__link"><a href="">Facebook</a></li>
+                    <li class="mobile-social__link"><a href="">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
