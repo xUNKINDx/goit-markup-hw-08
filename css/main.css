@@ -198,16 +198,14 @@ a:link {
 }
 @media screen and (max-width: 1199px) {
   .auth-nav {
-    display: block;
+    flex-direction: column;
+    row-gap: 10px;
   }
 }
 @media screen and (max-width: 767px) {
   .auth-nav {
     display: none;
   }
-}
-.auth-nav__item + .auth-nav__item {
-  margin-left: 50px;
 }
 .auth-nav__item {
   margin-top: 0;
@@ -288,6 +286,7 @@ a:link {
 
 .benefits {
   display: flex;
+  flex-wrap: wrap;
   padding-left: 0;
   gap: 30px;
 }
@@ -411,6 +410,7 @@ a:link {
 
 .user {
   display: flex;
+  gap: 30px;
 }
 @media screen and (max-width: 767px) {
   .user {
@@ -424,7 +424,7 @@ a:link {
   }
 }
 .user__list {
-  width: 270px;
+  width: 100%;
   text-align: center;
   padding-bottom: 20px;
   background: #FFFFFF;
@@ -456,7 +456,12 @@ a:link {
 }
 @media screen and (max-width: 767px) {
   .user__jpg {
-    width: 450px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .user__jpg {
+    width: 100%;
   }
 }
 .user__name {
