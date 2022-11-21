@@ -113,6 +113,7 @@ a:link {
 .header__main {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .menu-toggle {
@@ -308,7 +309,8 @@ a:link {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
-  gap: 30px;
+  row-gap: 30px;
+  justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .benefits {
@@ -997,7 +999,7 @@ a:link {
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  color: #000;
 }
 
 .mobile-menu {
